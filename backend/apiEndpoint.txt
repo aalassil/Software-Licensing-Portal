@@ -1,0 +1,87 @@
+1- POST http://localhost:8000/api/signup
+
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "johndoe@example.com",
+  "username": "johndoe123",
+  "password": "password123",
+  "contact": "1234567890",
+  "role": "client"
+}
+
+2- http://localhost:8000/api/login
+
+{
+  "email": "john2@example.com",
+  "password": "password123",
+  "role": "client"
+}
+
+(after login copy token and go to below routes and go to headers and add these key and value)
+
+key                    value
+
+Authorization          Bearer (copy token from login and paste it here) (not do not use Bearer with the token)
+
+3- POST http://localhost:8000/api/purchases
+
+{
+  "selectedSoftware": "Software 9",
+  "licenseTerm": "3 Years",
+  "quantity": 1
+}
+
+
+4- POST http://localhost:8000/api/renew-license
+
+{
+  "licenseKey": "So059746So",
+  "renewalTerm": "2 Years"              // imp 1 Year, 2 Years, 3 Years (s is important)
+}
+
+
+5- GET http://localhost:8000/api/purchase-info (get with respect to logged in user)
+
+6- POST http://localhost:8000/api/addClient (TO ADD CLIENT)
+
+{
+  "fullName": "John Doe 3",
+  "username": "johndoe1233",
+  "softwareName": "MySoftware 3",
+  "expirationDate": "2024-12-31"
+}
+
+7- GET http://localhost:8000/api/viewClients (TO GET ALL CLIENTS)
+
+8- DELETE http://localhost:8000/api/delete/656a8e78fd5e6837d8b0fba4 (TO DELETE CLIENT WHERE ID=656a8e78fd5e6837d8b0fba4)
+
+9- UPDATE http://localhost:8000/api/update/656a90b8782728d19ed6ae7c (TO UPDATE CLIENT WHERE ID=656a8e78fd5e6837d8b0fba4)
+
+{
+  "fullName": "asif",
+  "username": "asif12345",
+  "softwareName": "ms word and excel",
+  "expirationDate": "2025-11-29"
+}
+
+10- POST http://localhost:8000/api/sendMail (TO SEND EMAIL TO THE CLIENT)
+
+{
+  "name": "Asif",
+  "phone": "+1 234 567 8910",
+  "email": "asif-mehmood@hotmail.com",
+  "subject": "Project demo",
+  "message": "Thanks for contacting us"
+}
+
+
+11- POST http://localhost:8000/api/save-feedback 
+
+{
+  "name": "Your Name",
+  "phone": "+1 234 567 8910",
+  "email": "Email@gmail.com",
+  "subject": "Project demo",
+  "message": "Your message goes here"
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="design.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gabarito&family=Pixelify+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 class="SignUp">Sign Up Form</h1>
+    <style>
+      input:hover {
+        background-color: lightblue;
+      }
+      input:focus {
+        background-color: lightblue;
+      }
+    </style>
+
+    <form id="signupForm">
+      <div class="W">
+        <label for="First Name"> First Name: </label>
+        <input
+          class="input-group"
+          type="text"
+          id="First Name"
+          name="firstName"
+          placeholder="John"
+          minlength="3"
+          required
+        />
+        <br />
+        <br />
+        <label for="Last Name"> Last Name: </label>
+        <input
+          class="input-group"
+          type="text"
+          id="Last Name"
+          name="lastName"
+          minlength="3"
+          placeholder="Smith"
+          required
+        />
+        <br />
+        <br />
+        <label for="Email"> Email: </label>
+        <input
+          class="input-group"
+          type="email"
+          id="email"
+          placeholder="johnsmith@example.com"
+          name="'email"
+          required
+        />
+        <br />
+        <br />
+        <label for="Username"> Username: </label>
+        <input
+          class="input-group"
+          type="text"
+          id="username"
+          name="username"
+          minlength="5"
+          placeholder="jos.2"
+          required
+        />
+        <br />
+        <br />
+        <label for="Password"> Password: </label>
+        <input
+          class="input-group"
+          type="password"
+          id="password"
+          minlength="8"
+          placeholder="mtl2002#"
+          required
+          name="password"
+        />
+        <br />
+        <br />
+        <label for="Phone Number"> Phone Number: </label>
+        <input
+          class="input-group"
+          type="number"
+          id="phone"
+          minlength="8"
+          placeholder="+1(534)4568245"
+          required
+          name="contact"
+        />
+        <br />
+        <br />
+
+        <label for="Software Provider / Client">
+          Are you Software Provider or Client:
+        </label>
+        <select id="Software Provider or Client" name="role">
+          <option value="provider">Software Provider</option>
+          <option value="client">Client</option>
+        </select>
+        <br />
+        <br />
+
+        <input type="submit" value="Sign Up" class="button" />
+      </div>
+    </form>
+    <script src="./scripts/signup.js"></script>
+  </body>
+</html>

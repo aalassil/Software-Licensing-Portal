@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get in touch!</title>
+    <link rel="stylesheet" href="Style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gabarito&family=Pixelify+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="Background-image">
+      <div class="Container">
+        <h1>Get in touch!</h1>
+        <p>We would like to hear from you</p>
+        <div class="Contact-box">
+          <div class="Conatct-left">
+            <h3>Send your request</h3>
+            <form id="feedbackForm" method="post">
+              <div class="input-row">
+                <div class="input-group">
+                  <label>Name</label>
+                  <input type="text" name="name" placeholder="Your Name" />
+                </div>
+                <div class="input-group">
+                  <label>Phone no.</label>
+                  <input
+                    type="text"
+                    name="phone"
+                    placeholder="+1 234 567 8910"
+                  />
+                </div>
+                <div class="input-group">
+                  <label>E-mail Address</label>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email@gmail.com"
+                  />
+                </div>
+                <div class="input-group">
+                  <label>Subject</label>
+                  <input
+                    type="text"
+                    name="subject"
+                    placeholder="Project demo"
+                  />
+                </div>
+              </div>
+              <br />
+              <label> Message </label>
+              <textarea
+                name="message"
+                rows="5"
+                placeholder="Your message"
+              ></textarea>
+              <button type="submit">Send</button>
+            </form>
+          </div>
+          <div class="Contact-right">
+            <h3>You Can Always Reach Us</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./scripts/feedback.js"></script>
+  </body>
+</html>

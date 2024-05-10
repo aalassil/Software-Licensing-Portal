@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="MyLicenses.css" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Licenses</title>
+</head>
+
+<body>
+  <h1>MY LICENSES</h1>
+
+  <section id="licenses-list">
+    <h2>Manage Licenses</h2>
+    <input type="text" id="searchLicenses" placeholder="Search Licenses..." />
+
+    <table>
+      <thead>
+        <tr>
+          <th>Software Name</th>
+          <th>Serial Number</th>
+          <th>Purchase Year</th>
+          <th>Expiry Year</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="licenceList"></tbody>
+    </table>
+  </section>
+
+  <section id="purchase-license">
+    <h2>Purchase New License</h2>
+    <form id="purchase-form" method="post">
+      <label for="softwareSelect">Choose Software:</label>
+      <select id="softwareSelect" name="selectedSoftware">
+        <option value="software1">Software 1</option>
+        <option value="software2">Software 2</option>
+        <option value="software3">Software 3</option>
+      </select>
+
+      <label for="licenseTerm">License Term:</label>
+      <select id="licenseTerm" name="licenseTerm">
+        <option value="1 Year">1 Year</option>
+        <option value="2 Years">2 Years</option>
+        <option value="3 Years">3 Years</option>
+      </select>
+
+      <label for="licenseQuantity">Quantity:</label>
+      <input type="number" id="licenseQuantity" name="quantity" min="1" value="1" />
+
+      <button type="submit">Purchase</button>
+    </form>
+  </section>
+
+  <section id="renew-license">
+    <h2>Renew License</h2>
+    <form id="renew-form" method="post">
+      <label for="licenseKey">Enter License Serial Number:</label>
+      <input type="text" id="licenseKey" name="licenseKey" placeholder="XXXX-XXXX-XXXX-XXXX" />
+
+      <label for="renewalTerm">Renewal Term:</label>
+      <select id="renewalTerm" name="renewalTerm">
+        <option value="1 Year">1 Year</option>
+        <option value="2 Years">2 Years</option>
+        <option value="3 Years">3 Years</option>
+      </select>
+
+      <button type="submit">Renew</button>
+    </form>
+  </section>
+  <script src="./scripts/myLicence.js"></script>
+</body>
+
+</html>
